@@ -16,6 +16,9 @@ switch (arg1) {
   case "10":
     console.log("秋");
     break;
-  default:
-    console.log("冬");
+    case "11":
+    case "12":
+    case "1":
+      console.log("冬");
+      break;
 }
