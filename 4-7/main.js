@@ -3,11 +3,11 @@ const arg2 = String(process.argv[3]);
 let arr = [];
 
 // 引数を配列に変換
-const name = arg1.split(", ");
+const name = arg1.split(",");
 
 // 引数が含まれるか
-for (let i=0; i<=name.length; i++) {
-  let result = String(name[i]);
+for (let i=0; i<name.length; i++) {
+  let result = name[i];
   const reg = new RegExp(".*" + arg2 + ".*", "i");
   const found = result.match(reg);
   if (found != null) {
