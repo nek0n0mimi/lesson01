@@ -27,7 +27,7 @@ for (let j=0; j<jsonObject.data.length; j++) {
   let get_id = Number(jsonObject.data[j].id);
   for (let k=0; k<jsonObject_2.songs.length; k++) {
     if (get_id == jsonObject_2.songs[k].id) {
-      console.log(`順位:${jsonObject_2.songs[k].title}\t${jsonObject.data[j].count}`);
+        console.log(`${j+1}位:${jsonObject_2.songs[k].title}\t${jsonObject.data[j].count}`);
     }
   }
 }
